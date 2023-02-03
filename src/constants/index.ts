@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@fooswap-libs/sdk'
 
-export const ROUTER_ADDRESS = '0xaf1267B957A21E5F8BA0E46824df602Fb05271eB'
+export const ROUTER_ADDRESS = '0x12F57C67FDd16109B549F0B40579694fE12bf9Fd'
 
 // a list of tokens by chain
 type ChainTokenList = {

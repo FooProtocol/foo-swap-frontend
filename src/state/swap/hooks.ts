@@ -90,10 +90,10 @@ const BAD_RECIPIENT_ADDRESSES: string[] = [
   '0xBCfCcbde45cE874adCB698cC183deBcF17952812', // v2 factory
   '0xf164fC0Ec4E93095b804a4795bBe1e041497b92a', // v2 router 01
   '0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F', // v2 router 02
-  '0xaf1267B957A21E5F8BA0E46824df602Fb05271eB', // fooswap router 02
+  '0x12F57C67FDd16109B549F0B40579694fE12bf9Fd', // fooswap router 02
   '0xbCee5730d9250f6b185fD537a05175da0215270D', // fooswap factory
   '0xbCee5730d9250f6b185fD537a05175da0215270D', // fooswap factory
-  '0x07b8b15Afd654e9334A3D63396B5f9092bfb0D9E', // fooswap router
+  '0x3046f2B7967C67003cd16BdfB2EE4ab08510DF33', // fooswap router
 ]
 
 /**

@@ -2027,10 +2027,10 @@
     dotenv "^16.0.3"
     ethers "^5.7.2"
 
-"@fooswap-libs/sdk@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@fooswap-libs/sdk/-/sdk-1.0.0.tgz#e5855890fabe73422433844556a832dd385beaa2"
-  integrity sha512-SgYOJViPwRneRI88yaVP8GOzQLxtTOCkhaOOd8UaBGdg7PISqWE8pjWECTOyD7gvLr4nLjeVLiTXwmAbatLHzA==
+"@fooswap-libs/sdk@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@fooswap-libs/sdk/-/sdk-1.0.2.tgz#e6f4720159370c3a410b2aa676e3c67b65ed743c"
+  integrity sha512-3RJniaADOWIKRauQR3SbN+wyOsguOOesgZA+4TMmR65ZCXgw3ONVnU7A+quXcDiEkysU3Se837xHpRYG24/xvg==
   dependencies:
     "@fooswap-libs/foo-swap-core" "^1.0.1"
     big.js "^5.2.2"
