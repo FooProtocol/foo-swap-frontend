@@ -11,7 +11,9 @@ import Providers from './Providers'
 import 'inter-ui'
 import './i18n'
 
+// @ts-ignore
 if ('ethereum' in window) {
+  // @ts-ignore
   (window.ethereum as any).autoRefreshOnNetworkChange = false
 }
 

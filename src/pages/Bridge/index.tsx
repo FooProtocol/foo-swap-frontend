@@ -285,7 +285,7 @@ const Bridge = () => {
             swapErrorMessage={swapErrorMessage}
             onDismiss={handleConfirmDismiss}
           />
-          <PageHeader title="Bridge" description="Bridge tokens in an instant" />
+          <PageHeader dontDisplaySettings title="Bridge" description="Bridge tokens in an instant" />
           <CardBody>
             <AutoColumn gap="md">
               <CurrencyInputPanel

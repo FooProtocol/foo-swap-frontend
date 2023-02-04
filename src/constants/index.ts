@@ -7,16 +7,6 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const DAI = new Token(ChainId.MAINNET, '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', 18, 'DAI', 'Dai Stablecoin')
-export const BUSD = new Token(ChainId.MAINNET, '0xe9e7cea3dedca5984780bafc599bd69add087d56', 18, 'BUSD', 'Binance USD')
-export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059ff775485246999027b3197955', 18, 'USDT', 'Tether USD')
-export const UST = new Token(
-  ChainId.MAINNET,
-  '0x23396cf899ca06c4472205fc903bdb4de249d6fc',
-  18,
-  'UST',
-  'Wrapped UST Token'
-)
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
@@ -26,7 +16,7 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT, UST],
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET]],
 }
 
 /**
@@ -40,23 +30,21 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT],
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET]],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT],
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET]],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
     [
       new Token(ChainId.MAINNET, '0x40f1704053559f72980f7Ab0b748A5C9D5E81BA4', 18, 'FOO', 'FooSwap Token'),
-      new Token(ChainId.MAINNET, '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'),
+      new Token(ChainId.MAINNET, '0x844C7aa18E1c3BA24d5E525536C426Aa55784B65', 18, 'WFIL', 'Wrapped FIL'),
     ],
-    [BUSD, USDT],
-    [DAI, USDT],
   ],
 }
 
