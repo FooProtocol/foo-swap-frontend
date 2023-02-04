@@ -18,11 +18,8 @@ const Nav = ({ activeIndex = 0 }: { activeIndex?: number }) => (
         <TranslatedText translationId={74}>Liquidity</TranslatedText>
       </ButtonMenuItem>
       <ButtonMenuItem
-        id="pool-nav-link"
-        as="a"
-        href="https://www.binance.org/en/bridge?utm_source=FooSwap"
-        target="_blank"
-        rel="noreferrer noopener"
+        id="bride-nav-link"
+        to="/bridge" as={Link}
       >
         Bridge
       </ButtonMenuItem>
