@@ -30,7 +30,7 @@ If you are seeking to be added to the [Fooswap.finance](https://pancakeswap.fina
 "name": "FooSwap Token",
 "symbol": "FOO",
 "address": "0x1f546ad641b56b86fd9dceac473d1c7a357276b7",
-"chainId": 56,
+"chainId": 3141,
 "decimals": 18,
 "logoURI": "/images/coins/foo.png"
 },
