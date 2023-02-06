@@ -166,7 +166,11 @@ export default function AddLiquidity({
     }
 
     setAttemptingTxn(true)
+
+    
     // const aa = await estimate(...args, value ? { value } : {})
+
+    console.log(args, value);
     await estimate(...args, value ? { value } : {})
       .then((estimatedGasLimit) =>
         method(...args, {
