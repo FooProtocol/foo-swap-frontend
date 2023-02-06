@@ -20,10 +20,11 @@
     },
     {
       "name": "Filecoin",
-      "symbol": "FIL",
-      "address": "0x0d8ce2a99bb6e3b7db580ed848240e4a0f9ae153",
+      "symbol": "WFIL",
+      "address": "0x844C7aa18E1c3BA24d5E525536C426Aa55784B65",
       "chainId": 3141,
-      "decimals": 18
+      "decimals": 18,
+      "logoURI": "/images/coins/fil.png"
     }
   ]
 }
